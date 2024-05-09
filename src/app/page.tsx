@@ -14,7 +14,7 @@ export default function Home() {
 
       <div className="w-full overflow-hidden min-h-max font-roboto flex flex-col gap-10">
         <div className="flex items-center sm:gap-10">
-          <h1 className="text-5xl md:text-7xl lg:text-9xl font-medium">ATEX-RESOURCES</h1>
+          <h1 className="text-5xl md:text-7xl lg:text-9xl font-medium ">ATEX-RESOURCES</h1>
           <Link href={"/blog"} title="explore now" className="border-2 p-5 relative flex gap-5 items-center justify-center border-white sm:p-10 rounded-3xl transition-all hover:bg-white hover:text-black "> 
   <ChevronRight size={30}/></Link >
           {/* <p className="text-3xl font-[300]  text-gray-100">
@@ -47,15 +47,6 @@ export default function Home() {
       <div className="w-full h-max">
         <h1 className=" text-5xl md:text-9xl font-roboto mb-10">Latest Posts</h1>
       <CardCarousel blogs={data}/>
-      </div>
-
-      <div>
-        <CustomCard data={{
-          title: "",
-          date: "",
-          author: "",
-          content: ""
-        }} isCardForShowingFeatures={true} />
       </div>
 
 

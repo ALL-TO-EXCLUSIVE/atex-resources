@@ -13,7 +13,7 @@ const categories = [
 
 const CategoryList = () => {
   return (
-    <div className='flex gap-5'>
+    <div className='flex gap-5 font-roboto'>
 
         <Tabs defaultValue="semesters" className="w-[400px]">
   <TabsList>    

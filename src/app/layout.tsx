@@ -14,7 +14,8 @@ const fontSans = FontSans({
 const fontRoboto = Roboto({
   subsets:["latin"],
   variable:"--font-roboto",
-  weight:["100","300","400","500","700","900"]
+  weight:["100","300","400","500","700","900"],
+  style:["normal","italic"]
 })
 
 export const metadata: Metadata = {
@@ -31,7 +32,7 @@ export default function RootLayout({
     <html lang="en">
       <body  className={cn(
           "min-h-screen bg-black/[99%] text-white font-sans antialiased",
-          fontSans.variable, fontRoboto.variable
+          fontSans.variable, fontRoboto.variable, fontRoboto.className, fontSans.className
         )}>
           <Navbar/>
           {children}
